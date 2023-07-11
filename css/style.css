@@ -67,6 +67,10 @@ section {
   display: flex;
   align-items: center;
   padding: 0 9%;
+  background: url("../img/backHome.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .home-content {
@@ -140,10 +144,16 @@ section {
 
 .home-imgHover {
   position: absolute;
-  top: 0;
+  top: 25%;
   right: 0;
   width: 45%;
-  height: 100%;
+  height: 70%;
   background: transparent;
   border: 2px solid red;
+}
+
+.img-profile {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */
