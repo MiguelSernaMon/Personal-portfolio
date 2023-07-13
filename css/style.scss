@@ -177,20 +177,28 @@ section {
   color: red;
 }
 
+.projects-scheme {
+  display: flex;
+  background: blue;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7%;
+}
+
 .projects-container {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
   border: 3px solid green;
-  max-width: 1280px;
-  width: 100%;
-  gap: 15px;
+  max-width: 1200px;
+  width: 90%;
 }
 
 .projectsec {
   border: 1 px solid red;
   background: red;
-  width: 400px;
+  width: 95%;
   text-align: center;
 }
 
@@ -207,4 +215,29 @@ section {
   text-decoration: none;
   margin-bot: 2rem;
   background-color: #112e42;
+}
+
+.project-btn {
+  width: 50px;
+  height: 80px;
+  background: none;
+  transition: 0.5s;
+}
+
+.project-btn:hover {
+  width: 80px;
+  height: 110px;
+}
+
+.project-btn-img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.prev {
+  transform: rotate(180deg) translateX(100px);
+}
+
+.next {
+  transform: translateX(80px);
 }
