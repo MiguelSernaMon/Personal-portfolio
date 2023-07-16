@@ -1,25 +1,25 @@
 //skills section
 
 const skillsIcons = document.querySelectorAll('.skill-logo');
-console.log(skillsIcons);
 
-skillsIcons.forEach((element) => {
-  element.style.transform = 'translateY(-300px)';
-});
-
-var i = 1; //  set your counter to 1
-
-function myLoop() {
-  //  create a loop function
+// Random number for random animation in skills section
+let i = Math.floor(Math.random() * 6);
+//Function who calls itself to loop the animations infinetely
+function myLoop(animationDirection) {
   setTimeout(function () {
-    //  call a 3s setTimeout when the loop is called
-    console.log('hello'); //  your code here
-    i++; //  increment the counter
-    if (i < 10) {
-      //  if the counter < 10, call the loop function
-      myLoop(); //  ..  again which will trigger another
-    } //  ..  setTimeout()
-  }, 3000);
+    let auxiliar = i;
+    console.log(i);
+    if (animationDirection > 0) {
+      skillsIcons[i].style.transform = `translateY(-40px)`;
+    } else if (animationDirection < 0) {
+      skillsIcons[i].style.transform = `translateY(0px)`;
+      do {
+        i = Math.floor(Math.random() * 6);
+      } while (i === auxiliar);
+    }
+    animationDirection *= -1;
+    myLoop(animationDirection); //  recalls the animation function
+  }, 1000);
 }
-
-myLoop();
+myLoop(1);
+//----------------------------------------------
