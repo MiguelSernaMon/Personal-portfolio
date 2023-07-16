@@ -235,4 +235,37 @@ section {
 
 .next {
   transform: translateX(80px);
+}
+
+.skills h3 {
+  font-size: 4.5rem;
+  display: block;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
+.skills-container {
+  width: 100%;
+}
+
+.skills-container-gif {
+  width: 200px;
+  margin-top: 10%;
+  height: 200px;
+  position: relative;
+  background-image: url("../img/lizard-anim.gif");
+  background-size: cover;
+  display: inline-block;
+}
+
+.skills-container-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.skill-logo {
+  width: 100px;
+  margin: 10px;
+  transition: 1s;
 }/*# sourceMappingURL=style.css.map */
