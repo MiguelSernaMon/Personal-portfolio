@@ -1,4 +1,15 @@
-//skills section
+//General stuff
+const allBtns = document.querySelectorAll('.btn');
+
+// allBtns.forEach((element) => {
+//   element.addEventListener('mouseout', function () {
+//     element.classList.add('onleave-btns');
+//   });
+// });
+console.log(allBtns);
+//Home Section
+
+//Skills section
 
 const skillsIcons = document.querySelectorAll('.skill-logo');
 
@@ -8,7 +19,6 @@ let i = Math.floor(Math.random() * 6);
 function myLoop(animationDirection) {
   setTimeout(function () {
     let auxiliar = i;
-    console.log(i);
     if (animationDirection > 0) {
       skillsIcons[i].style.transform = `translateY(-40px)`;
     } else if (animationDirection < 0) {
