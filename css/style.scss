@@ -11,7 +11,7 @@ $main-color: #00abf0;
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Press Start 2P', cursive;
 }
 
 html {
@@ -72,7 +72,7 @@ section {
   display: flex;
   align-items: center;
   padding: 0 9%;
-  background: url('../img/backHome.jpg');
+  background: $bg-color;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -100,7 +100,7 @@ section {
 }
 
 .home-content p {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin: 2rem 0 4rem;
 }
 
@@ -122,7 +122,7 @@ section {
   background: $main-color;
   border: 0.2rem solid $main-color;
   border-radius: 0.8rem;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
   color: $bg-color;
@@ -199,10 +199,10 @@ section {
 }
 
 .shortLink {
-  width: 80px;
-  height: 80px;
-  max-width: 80px;
-  max-height: 80px;
+  width: 50px;
+  height: 50px;
+  max-width: 50px;
+  max-height: 50px;
   margin-right: 10px;
 }
 
@@ -228,7 +228,7 @@ section {
 
 .projects-scheme {
   display: flex;
-  background: blue;
+  // background: blue;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -239,7 +239,7 @@ section {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
-  border: 3px solid green;
+  // border: 3px solid green;
   max-width: 1200px;
   width: 90%;
 }
