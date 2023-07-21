@@ -204,6 +204,11 @@ section {
   max-width: 50px;
   max-height: 50px;
   margin-right: 10px;
+  transition: 600ms;
+}
+
+.shortLink:hover {
+  transform: translateY(-3px) scale(1.1);
 }
 
 .shortLink-icon {
