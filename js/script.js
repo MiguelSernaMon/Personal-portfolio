@@ -1,11 +1,6 @@
 //General stuff
 const allBtns = document.querySelectorAll('.btn');
 
-// allBtns.forEach((element) => {
-//   element.addEventListener('mouseout', function () {
-//     element.classList.add('onleave-btns');
-//   });
-// });
 console.log(allBtns);
 //Home Section
 
@@ -14,22 +9,28 @@ console.log(allBtns);
 const skillsIcons = document.querySelectorAll('.skill-logo');
 
 // Random number for random animation in skills section
-let i = Math.floor(Math.random() * 6);
+let i = 0;
 //Function who calls itself to loop the animations infinetely
 function myLoop(animationDirection) {
   setTimeout(function () {
-    let auxiliar = i;
+    // let auxiliar = i;
     if (animationDirection > 0) {
-      skillsIcons[i].style.transform = `translateY(-40px)`;
+      skillsIcons[i].style.transform = `translateY(-3px) scale(1.1)`;
     } else if (animationDirection < 0) {
-      skillsIcons[i].style.transform = `translateY(0px)`;
-      do {
-        i = Math.floor(Math.random() * 6);
-      } while (i === auxiliar);
+      skillsIcons[i].style.transform = `translateY(0px) scale(1)`;
+      // do {
+      //   i = Math.floor(Math.random() * 6);
+      // } while (i === auxiliar);
+      i++;
     }
     animationDirection *= -1;
-    myLoop(animationDirection); //  recalls the animation function
-  }, 1000);
+    if (i > 6) {
+      i = 0;
+      myLoop(1);
+    } else {
+      myLoop(animationDirection); //  recalls the animation function
+    }
+  }, 500);
 }
 myLoop(1);
 //----------------------------------------------
