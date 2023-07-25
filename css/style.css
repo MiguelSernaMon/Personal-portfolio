@@ -67,7 +67,7 @@ section {
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .layer1 {
@@ -94,7 +94,7 @@ section {
   position: absolute;
   content: "";
   background-image: url("../img/HomeBackgrnd.png");
-  background-size: 100% 100%;
+  background-size: cover;
   opacity: 0.3;
   left: 0;
   top: 0;
@@ -157,7 +157,7 @@ section {
 }
 
 .btn-box .btn:hover {
-  background: #ec0b36 url("../img/pixel.png");
+  background: #c64917 url("../img/pixel.png");
   background-size: contain;
   transition-delay: 0.8s;
   background-size: 100%;
@@ -228,7 +228,7 @@ section {
   left: 0;
   top: 0;
   background-image: url("../img/projectsBground.png");
-  background-size: 100% 100%;
+  background-size: cover;
   width: 100%;
   height: 100%;
   content: "";
@@ -381,12 +381,12 @@ section {
 .contact form .input-box .input-field input {
   width: 100%;
   height: 100%;
-  padding: 1.5rem;
-  background-image: url("../img/inputmargin.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  padding: 2.5rem;
+  background: transparent;
   border-radius: 10px;
+  border: solid 1.2rem #00abf0;
   color: #00abf0;
+  font-size: 1.1rem;
 }
 
 .contact form .input-box .input-field input::-moz-placeholder {
@@ -408,9 +408,10 @@ section {
   height: 100%;
   padding: 1.5rem;
   background: transparent;
-  border: solid 0.2rem #00abf0;
+  border: solid 1.2rem #00abf0;
   color: #00abf0;
   border-radius: 10px;
+  line-height: 2rem;
 }
 
 .contact form .textarea-field textarea::-moz-placeholder {
