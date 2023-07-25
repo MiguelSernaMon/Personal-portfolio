@@ -74,6 +74,14 @@ section {
   background-image: url("../img/layer1.png");
 }
 
+.layer2 {
+  background-image: url("../img/layer2.png");
+}
+
+.layer3 {
+  background-image: url("../img/layer3.png");
+}
+
 .home {
   display: flex;
   position: relative;
@@ -125,7 +133,7 @@ section {
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 34.5rem;
+  width: 38.5rem;
   height: 5rem;
 }
 
@@ -134,7 +142,7 @@ section {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 15rem;
+  width: 18rem;
   height: 100%;
   background: #00abf0;
   border: 0.2rem solid #00abf0;
@@ -161,7 +169,7 @@ section {
     background-position-y: 0;
   }
   100% {
-    background-position-y: -390px;
+    background-position-y: -470px;
   }
 }
 .home-imgHover {
@@ -344,6 +352,8 @@ section {
 
 .contact {
   padding-bottom: 8rem;
+  background-image: url("../img/contactBackground.png");
+  background-size: cover;
 }
 
 .contact h3 {
