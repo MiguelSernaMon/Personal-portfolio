@@ -15,9 +15,11 @@ function myLoop(animationDirection) {
   setTimeout(function () {
     // let auxiliar = i;
     if (animationDirection > 0) {
-      skillsIcons[i].style.transform = `translateY(-3px) scale(1.1)`;
+      // skillsIcons[i].style.transform = `translateY(-3px) scale(1.1)`;
+      skillsIcons[i].style.transform = `translateY(-3px)`;
     } else if (animationDirection < 0) {
-      skillsIcons[i].style.transform = `translateY(0px) scale(1)`;
+      // skillsIcons[i].style.transform = `translateY(0px) scale(1)`;
+      skillsIcons[i].style.transform = `translateY(0px)`;
       // do {
       //   i = Math.floor(Math.random() * 6);
       // } while (i === auxiliar);
