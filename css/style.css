@@ -266,6 +266,7 @@ section {
 }
 
 .projectsec {
+  position: relative;
   border: solid 2px red;
   width: 100%;
   height: 100%;
@@ -281,23 +282,29 @@ section {
 }
 
 .projectsec img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: calc(100% - 6.8rem);
 }
 
 .project-title {
-  font-size: 2rem;
+  font-size: 0.8rem;
   padding: 2rem 0.5rem;
   color: white;
   text-decoration: none;
-  background-color: #112e42;
+  background-color: red;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 .skills {
   height: 500px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .skills::before {
@@ -694,26 +701,213 @@ section {
 }
 /* sm --------------------------------------*/
 @media (max-width: 640px) {
-  .container {
-    max-width: 475px;
+  .logo {
+    font-size: 1.8rem;
+  }
+  .home {
+    height: 700px;
+    flex-direction: column-reverse;
+    justify-content: start;
+  }
+  .home__content h1 {
+    font-size: 2rem;
+  }
+  .home__content h1 span::before {
+    content: "\a";
+    white-space: pre;
+  }
+  .home__content .text-animate h3 {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+  .home__content p {
+    font-size: 1rem;
+    margin: 2rem 0 2rem;
+  }
+  .home__content {
+    max-width: 58rem;
+  }
+  .shortLink {
+    width: 30px;
+    height: 30px;
+  }
+  .btn-box {
+    width: 22rem;
+    height: 3rem;
+  }
+  .btn-box .btn {
+    width: 10rem;
+    font-size: 0.7rem;
+    margin-left: 0;
+  }
+  @keyframes animate {
+    0% {
+      background-position-y: 0;
+    }
+    100% {
+      background-position-y: -250px;
+    }
+  }
+  .home-imgHover {
+    position: static;
+    height: 25%;
+    margin-top: 25%;
+  }
+  .img-profile {
+    width: 80%;
+  }
+  .projects {
+    height: 700px;
+    padding-top: 40px;
+  }
+  .projects h3 {
+    font-size: 1.5rem;
+  }
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .skills {
+    height: 350px;
+  }
+  .skills h3 {
+    font-size: 1.4rem;
+  }
+  .skill-logo {
+    width: 35px;
+    height: 35px;
+  }
+  .contact {
+    padding-top: 90px;
+  }
+  .contact h3 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+  }
+  .contact form {
+    width: 80%;
+  }
+  .contact form .input-box .input-field input {
+    padding: 1rem;
+    font-size: 0.7rem;
+  }
+  .contact form .input-box .input-field input::-moz-placeholder {
+    font-size: 0.7rem;
+  }
+  .contact form .input-box .input-field input::placeholder {
+    font-size: 0.7rem;
+  }
+  .contact form .textarea-field textarea {
+    font-size: 0.7rem;
   }
 }
 /* xs --------------------------------------*/
 @media (max-width: 475px) {
   .logo {
+    font-size: 1.8rem;
+  }
+  .home {
+    height: 700px;
+    flex-direction: column-reverse;
+    justify-content: start;
+  }
+  .home__content h1 {
     font-size: 2rem;
   }
-  .navbar a {
-    font-size: 2rem;
+  .home__content h1 span::before {
+    content: "\a";
+    white-space: pre;
+  }
+  .home__content .text-animate h3 {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+  .home__content p {
+    font-size: 1rem;
+    margin: 2rem 0 2rem;
+  }
+  .home__content {
+    max-width: 58rem;
+  }
+  .shortLink {
+    width: 30px;
+    height: 30px;
+  }
+  .btn-box {
+    width: 22rem;
+    height: 3rem;
+  }
+  .btn-box .btn {
+    width: 10rem;
+    font-size: 0.7rem;
     margin-left: 0;
   }
-  .container {
-    width: 100%;
+  @keyframes animate {
+    0% {
+      background-position-y: 0;
+    }
+    100% {
+      background-position-y: -250px;
+    }
   }
   .home-imgHover {
-    height: 40%;
+    position: static;
+    height: 25%;
+    margin-top: 25%;
   }
-  .home-imgHover .img-profile {
-    width: 100%;
+  .img-profile {
+    width: 80%;
+  }
+  .projects {
+    height: 550px;
+    padding-top: 40px;
+  }
+  .projects h3 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  }
+  .projectsec {
+    height: 110px;
+  }
+  .project-title {
+    padding: 0;
+  }
+  .skills {
+    height: 250px;
+    padding-top: 2.5rem;
+  }
+  .skills h3 {
+    font-size: 1.2rem;
+  }
+  .skill-logo {
+    width: 20px;
+    height: 20px;
+  }
+  .contact {
+    padding-top: 30px;
+  }
+  .contact h3 {
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+  }
+  .contact form {
+    width: 80%;
+  }
+  .contact form .input-box .input-field input {
+    padding: 1rem;
+    font-size: 0.6rem;
+    border: solid 2px #00abf0;
+  }
+  .contact form .input-box .input-field input::-moz-placeholder {
+    font-size: 0.6rem;
+  }
+  .contact form .input-box .input-field input::placeholder {
+    font-size: 0.6rem;
+  }
+  .contact form .textarea-field textarea {
+    font-size: 0.6rem;
+    border: solid 2px #00abf0;
   }
 }/*# sourceMappingURL=style.css.map */
