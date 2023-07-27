@@ -89,11 +89,12 @@ section {
   display: flex;
   position: relative;
   align-items: center;
+  justify-content: center;
   padding: 0 9%;
   //background: $bg-color;
   //min-height: 100vh;
   height: 100vh;
-  max-height: 768px;
+  max-height: 1068px;
 }
 
 .home::before {
@@ -180,14 +181,14 @@ section {
 }
 
 .home-imgHover {
-  position: absolute;
-  top: 25%;
-  right: 0;
   width: 45%;
-  height: 70%;
+  height: 45%;
   background: transparent;
   border: 2px solid #ff0000;
   max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-profile {
@@ -199,13 +200,9 @@ section {
 }
 
 .shortLinks-profile {
-  width: 100%;
-  height: 5rem;
+  margin-bottom: 30px;
   display: flex;
-  position: relative;
-  top: 5%;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .shortLink {
@@ -417,6 +414,7 @@ section {
 .contact form .textarea-field textarea {
   width: 100%;
   height: 100%;
+
   padding: 1.5rem;
   background: transparent;
   border: solid 0.5rem $main-color;
@@ -647,51 +645,62 @@ section {
 /* md --------------------------------------*/
 @media (max-width: 768px) {
   //Home Section
-
-  .home {
-    height: 768px;
+  .logo {
+    font-size: 1.8rem;
   }
-
+  .home {
+    height: 1068px;
+    flex-direction: column-reverse;
+  }
   .home__content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .home__content h1 span::before {
     content: '\a';
     white-space: pre;
   }
   .home__content .text-animate h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 2.3rem;
   }
+
+  .home__content p {
+    font-size: 1rem;
+    margin: 2rem 0 2rem;
+  }
   .home__content {
-    max-width: 38rem;
+    max-width: 58rem;
+  }
+  .shortLink {
+    width: 30px;
+    height: 30px;
   }
   .btn-box {
-    width: 30rem;
+    width: 22rem;
+    height: 3rem;
   }
   .btn-box .btn {
-    font-size: 1rem;
-    margin-left: 5%;
+    width: 10rem;
+    font-size: 0.7rem;
+    margin-left: 0;
   }
+
   //--Button hover animation
   @keyframes animate {
     0% {
       background-position-y: 0;
     }
     100% {
-      background-position-y: -350px;
+      background-position-y: -250px;
     }
   }
   //-----------------------------------
   .home-imgHover {
-    top: 24.7%;
-    height: 55%;
+    position: static;
+    height: 30%;
   }
   .img-profile {
     width: 70%;
-  }
-  .shortLinks-profile {
-    top: 23.3%;
   }
 
   //Project's section
@@ -701,7 +710,7 @@ section {
     padding-top: 0;
   }
   .projects h3 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .projects-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -713,7 +722,7 @@ section {
     height: 400px;
   }
   .skills h3 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .skill-logo {
     width: 60px;
@@ -728,12 +737,18 @@ section {
 
   .contact h3 {
     margin-bottom: 40px;
+    font-size: 2rem;
   }
   .contact form {
     width: 80%;
   }
   .contact form .input-box .input-field input {
-    padding: 2rem;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .contact form .textarea-field textarea {
+    font-size: 0.8rem;
   }
 }
 
