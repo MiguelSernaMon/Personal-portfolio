@@ -55,11 +55,11 @@ body {
   font-size: 3.6rem;
   color: #ededed;
   cursor: pointer;
-  display: none;
 }
 
 section {
   padding: 10rem 9% 2rem;
+  max-height: 1400px;
 }
 
 .spacer {
@@ -87,7 +87,8 @@ section {
   position: relative;
   align-items: center;
   padding: 0 9%;
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 1500px;
 }
 
 .home::before {
@@ -103,28 +104,28 @@ section {
   z-index: -1;
 }
 
-.home-content {
+.home__content {
   max-width: 60rem;
 }
 
-.home-content h1 {
+.home__content h1 {
   font-size: 5.6rem;
   font-weight: 700;
   line-height: 1.3;
 }
 
-.home-content .text-animate {
+.home__content .text-animate {
   position: relative;
   width: 32.8rem;
 }
 
-.home-content .text-animate h3 {
+.home__content .text-animate h3 {
   font-size: 3.2rem;
   font-weight: 700;
   color: #00abf0;
 }
 
-.home-content p {
+.home__content p {
   font-size: 1.3rem;
   margin: 2rem 0 4rem;
 }
@@ -179,18 +180,21 @@ section {
   width: 45%;
   height: 70%;
   background: transparent;
-  border: 2px solid red;
+  border: 2px solid #ff0000;
 }
 
 .img-profile {
   border-radius: 50%;
   display: block;
   margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 70%;
 }
 
 .shortLinks-profile {
   width: 100%;
-  height: 10%;
+  height: 5rem;
   display: flex;
   position: relative;
   top: 5%;
@@ -219,7 +223,7 @@ section {
 }
 
 .projects {
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -294,7 +298,6 @@ section {
 
 .skills {
   height: 60vh;
-  min-height: 40vh;
   position: relative;
 }
 
@@ -364,7 +367,7 @@ section {
 
 .contact form {
   text-align: center;
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -384,7 +387,7 @@ section {
   padding: 2.5rem;
   background: transparent;
   border-radius: 10px;
-  border: solid 1.2rem #00abf0;
+  border: solid 0.5rem #00abf0;
   color: #00abf0;
   font-size: 1.1rem;
 }
@@ -408,7 +411,7 @@ section {
   height: 100%;
   padding: 1.5rem;
   background: transparent;
-  border: solid 1.2rem #00abf0;
+  border: solid 0.5rem #00abf0;
   color: #00abf0;
   border-radius: 10px;
   line-height: 2rem;
@@ -425,4 +428,156 @@ section {
 .contact form .btn-box {
   width: 100%;
   justify-content: center;
+}
+
+/* 2xl */
+/* xl */
+/* lg */
+@media (max-width: 1024px) {
+  .home__content h1 {
+    font-size: 3.5rem;
+  }
+  .home__content h1 span::before {
+    content: "\a";
+    white-space: pre;
+  }
+  .home__content .text-animate h3 {
+    font-size: 2.5rem;
+  }
+  .home__content {
+    max-width: 48rem;
+  }
+  .home-imgHover {
+    top: 23.4%;
+  }
+  .img-profile {
+    width: 70%;
+  }
+  .shortLinks-profile {
+    top: 5.4%;
+  }
+  .projects h3 {
+    font-size: 2.5rem;
+  }
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .skills h3 {
+    font-size: 2.5rem;
+  }
+  .skill-logo {
+    width: 80px;
+    height: 80px;
+  }
+  .contact h3 {
+    margin-bottom: 10vh;
+  }
+  .contact form {
+    width: 80%;
+  }
+  .contact form .input-box .input-field input {
+    padding: 2rem;
+  }
+}
+/* md */
+@media (max-width: 768px) {
+  .home {
+    height: 768px;
+  }
+  .home__content h1 {
+    font-size: 2.5rem;
+  }
+  .home__content h1 span::before {
+    content: "\a";
+    white-space: pre;
+  }
+  .home__content .text-animate h3 {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+  .home__content {
+    max-width: 38rem;
+  }
+  .btn-box {
+    width: 30rem;
+  }
+  .btn-box .btn {
+    font-size: 1rem;
+    margin-left: 5%;
+  }
+  @keyframes animate {
+    0% {
+      background-position-y: 0;
+    }
+    100% {
+      background-position-y: -350px;
+    }
+  }
+  .home-imgHover {
+    top: 24.7%;
+    height: 55%;
+  }
+  .img-profile {
+    width: 70%;
+  }
+  .shortLinks-profile {
+    top: 23.3%;
+  }
+  .projects {
+    height: 800px;
+    padding-top: 0;
+  }
+  .projects h3 {
+    font-size: 2.2rem;
+  }
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .skills {
+    height: 400px;
+  }
+  .skills h3 {
+    font-size: 2.2rem;
+  }
+  .skill-logo {
+    width: 60px;
+    height: 60px;
+  }
+  .contact {
+    padding-top: 100px;
+  }
+  .contact h3 {
+    margin-bottom: 40px;
+  }
+  .contact form {
+    width: 80%;
+  }
+  .contact form .input-box .input-field input {
+    padding: 2rem;
+  }
+}
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+/* xs */
+@media (max-width: 475px) {
+  .logo {
+    font-size: 2rem;
+  }
+  .navbar a {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+  .container {
+    width: 100%;
+  }
+  .home-imgHover {
+    height: 40%;
+  }
+  .home-imgHover .img-profile {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
