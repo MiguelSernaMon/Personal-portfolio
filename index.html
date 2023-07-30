@@ -12,7 +12,6 @@
       rel="stylesheet"
     />
     <!-- End fonts -->
-    <link rel="stylesheet" href="./css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
 
     <!-- Box icons-->
@@ -37,7 +36,7 @@
     <section class="home" id="home">
       <div class="home__content">
         <h1>Hi. I'm <span>Miguel Serna</span></h1>
-        <div class="text-animate">
+        <div class="home__text-animate">
           <h3>Fullstack Developer</h3>
         </div>
         <p>
@@ -47,45 +46,47 @@
           voluptate!
         </p>
 
-        <div class="shortLinks-profile">
-          <a class="shortLink" href="#">
+        <div class="home__links-container">
+          <!-- class = "links-container__shortilink" -->
+          <!-- class= "home__shortlink"  -->
+          <a class="home__shortlink" href="#">
             <img
-              class="shortLink-icon"
+              class="home__shortlink-icon"
               src="./img/shortLinks/cvPixelated.png"
               alt=""
             />
           </a>
-          <a class="shortLink" href="#">
+          <a class="home__shortLink" href="#">
             <img
-              class="shortLink-icon"
+              class="home__shortLink-icon"
               src="./img/shortLinks/email-pixelated.png"
               alt=""
             />
           </a>
-          <a class="shortLink" href="#">
+          <a class="home__shortLink" href="#">
             <img
-              class="shortLink-icon"
+              class="home__shortLink-icon"
               src="./img/shortLinks/githubPixelated.png"
               alt=""
             />
           </a>
-          <a class="shortLink" href="#">
+          <a class="home__shortLink" href="#">
             <img
-              class="shortLink-icon"
+              class="home__shortLink-icon"
               src="./img/shortLinks/linkedinPixelated.png"
               alt=""
             />
           </a>
-          <a class="shortLink" href="#">
+          <a class="home__shortLink" href="#">
             <img
-              class="shortLink-icon"
+              class="home__shortLink-icon"
               src="./img/shortLinks/twitterpixelated.jpg"
               alt=""
             />
           </a>
-          <a class="shortLink" href="#">
+          <a class="home__shortLink" href="#">
             <img
-              class="shortLink-icon"
+              class="home__shortLink-icon"
               src="./img/shortLinks/Whatsapp-icon.png"
               alt=""
             />
@@ -93,12 +94,16 @@
         </div>
 
         <div class="btn-box">
-          <a href="#" class="btn">Hire Me</a>
-          <a href="#" class="btn">Let's Talk</a>
+          <a href="#" class="btn-box__btn">Hire Me</a>
+          <a href="#" class="btn-box__btn">Let's Talk</a>
         </div>
       </div>
-      <div class="home-imgHover">
-        <img class="img-profile" src="./img/about.jpg" alt="prfile-picture" />
+      <div class="home__imgHover">
+        <img
+          class="home__img-profile"
+          src="./img/about.jpg"
+          alt="prfile-picture"
+        />
       </div>
     </section>
 
@@ -108,62 +113,57 @@
 
     <section class="projects" id="projects">
       <h3><span>My</span> Projects</h3>
-      <div class="projects-scheme">
-        <!-- <button class="project-btn prev">
-          <img class="project-btn-img" src="./img/arrow.png" alt="" />
-        </button> -->
-        <div class="projects-container">
-          <a class="projectsec" href="#">
-            <img src="./img/projectimg.svg" alt="" />
-            <p class="project-title">Page 1</p>
-          </a>
-          <a class="projectsec" href="#">
-            <img src="./img/projectimg.svg" alt="" />
-            <p class="project-title">Page 2</p>
-          </a>
-          <a class="projectsec" href="#">
-            <img src="./img/projectimg.svg" alt="" />
-            <p class="project-title">Page 3</p>
-          </a>
-          <a class="projectsec" href="#">
-            <img src="./img/projectimg.svg" alt="" />
-            <p class="project-title">Page 3</p>
-          </a>
-          <a class="projectsec" href="#">
-            <img src="./img/projectimg.svg" alt="" />
-            <p class="project-title">Page 3</p>
-          </a>
-          <a class="projectsec" href="#">
-            <img src="./img/projectimg.svg" alt="" />
-            <p class="project-title">Page 3</p>
-          </a>
-        </div>
-        <!-- <button class="project-btn next">
-          <img class="project-btn-img" src="./img/arrow.png" alt="" />
-        </button> -->
+
+      <div class="projects__container">
+        <a class="projects__cards cards-project1" href="#">
+          <img src="./img/projectimg.svg" alt="" />
+          <p class="project-title">Page 1</p>
+        </a>
+        <a class="projects__cards cards-project2" href="#">
+          <img src="./img/projectimg.svg" alt="" />
+          <p class="project-title">Page 2</p>
+        </a>
+        <a class="projects__cards cards-project3" href="#">
+          <img src="./img/projectimg.svg" alt="" />
+          <p class="project-title">Page 3</p>
+        </a>
+        <a class="projects__cards cards-project4" href="#">
+          <img src="./img/projectimg.svg" alt="" />
+          <p class="project-title">Page 4</p>
+        </a>
+        <a class="projects__cards cards-project5" href="#">
+          <img src="./img/projectimg.svg" alt="" />
+          <p class="project-title">Page 5</p>
+        </a>
+        <a class="projects__cards cards-project6" href="#">
+          <img src="./img/projectimg.svg" alt="" />
+          <p class="project-title">Page 6</p>
+        </a>
       </div>
     </section>
 
     <!-- End Projects Section -->
+
     <div class="spacer layer2"></div>
+
     <!-- Skills Section -->
 
     <section class="skills" id="skills">
-      <div class="title-skills">
-        <div class="skills-container-gif"></div>
+      <div class="skills__title">
+        <div class="skills__gif"></div>
         <h3><span>My</span> Skills</h3>
       </div>
 
-      <div class="skills-container">
-        <div class="skills-container-icon">
-          <img class="skill-logo" src="./img/skills/cssicon.png" alt="" />
-          <img class="skill-logo" src="./img/skills/htmlicon.png" alt="" />
-          <img class="skill-logo" src="./img/skills/javaicon.png" alt="" />
-          <img class="skill-logo" src="./img/skills/jsicon.png" alt="" />
-          <img class="skill-logo" src="./img/skills/mysqlicon.png" alt="" />
-          <img class="skill-logo" src="./img/skills/reacticon.png" alt="" />
+      <div class="skills__container">
+        <div class="skills__icons">
+          <img class="skill__logo" src="./img/skills/cssicon.png" alt="" />
+          <img class="skill__logo" src="./img/skills/htmlicon.png" alt="" />
+          <img class="skill__logo" src="./img/skills/javaicon.png" alt="" />
+          <img class="skill__logo" src="./img/skills/jsicon.png" alt="" />
+          <img class="skill__logo" src="./img/skills/mysqlicon.png" alt="" />
+          <img class="skill__logo" src="./img/skills/reacticon.png" alt="" />
           <img
-            class="skill-logo"
+            class="skill__logo"
             src="./img/skills/springbooticon.png"
             alt=""
           />
@@ -171,34 +171,56 @@
       </div>
     </section>
     <!-- End Skills Section -->
+
     <div class="spacer layer3"></div>
+
     <!-- Contact Section -->
     <section class="contact" id="contact">
       <h3>Contact <span>Me!</span></h3>
-
-      <form action="#">
-        <div class="input-box">
-          <div class="input-field">
-            <input type="text" placeholder="Full Name" required />
-            <span class="focus"></span>
+      <!-- form for contact -->
+      <form action="#" class="form">
+        <div class="form__input-box">
+          <div class="form__input-field">
+            <input
+              class="form__input"
+              id="input-username"
+              type="text"
+              placeholder="Full Name"
+              required
+            />
           </div>
-          <div class="input-field">
-            <input type="text" placeholder="Email Address" required />
-            <span class="focus"></span>
+          <div class="form__input-field">
+            <input
+              class="form__input"
+              id="input-email"
+              type="text"
+              placeholder="Email Address"
+              required
+            />
           </div>
         </div>
-        <div class="input-box">
-          <div class="input-field">
-            <input type="numer" placeholder="Mobile Number" required />
-            <span class="focus"></span>
+        <div class="form__input-box">
+          <div class="form__input-field">
+            <input
+              class="form__input"
+              id="input-number"
+              type="number"
+              placeholder="Mobile Number"
+              required
+            />
           </div>
-          <div class="input-field">
-            <input type="text" placeholder="Email Subject" required />
-            <span class="focus"></span>
+          <div class="form__input-field">
+            <input
+              class="form__input"
+              id="input-email"
+              type="text"
+              placeholder="Email Subject"
+              required
+            />
           </div>
         </div>
 
-        <div class="textarea-field">
+        <div class="form__textarea-field">
           <textarea
             spellcheck="false"
             name=""
@@ -212,7 +234,7 @@
         </div>
 
         <div class="btn-box">
-          <button type="submit" class="btn">Submit</button>
+          <button type="submit" class="btn-box__btn">Submit</button>
         </div>
       </form>
     </section>
