@@ -1,0 +1,93 @@
+@use '../abstracts/variables' as *;
+.home {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 0 9%;
+  height: $home-height;
+  max-height: $max-height;
+
+  &__content {
+    max-width: 68rem;
+  }
+
+  &__content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  &__text-animate {
+    position: relative;
+    width: 32.8rem;
+  }
+
+  &__text-animate h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #00abf0;
+  }
+
+  &__content p {
+    font-size: 1.3rem;
+    margin: 2rem 0 4rem;
+  }
+
+  &__links-container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__shortlink {
+    width: 50px;
+    height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 10px;
+    transition: 600ms;
+  }
+
+  &__shortlink:hover {
+    transform: translateY(-3px) scale(1.1);
+  }
+
+  &__shortlink-icon {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__imgHover {
+    width: 45%;
+    height: 45%;
+    background: transparent;
+    border: 2px solid #ff0000;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img-profile {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    width: 70%;
+  }
+}
+
+.home::before {
+  position: absolute;
+  content: '';
+  background-image: url($home-background);
+  background-size: cover;
+  opacity: 0.3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
