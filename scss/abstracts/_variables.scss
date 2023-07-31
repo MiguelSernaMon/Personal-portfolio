@@ -34,9 +34,12 @@ $main-color: #00abf0;
 $max-width: 1180px !default;
 $max-height: 1060px !default;
 
-///SectionsHeight
+///SectionHomeMeasures
 /// @type Length
 $home-height: 100vh;
+$home-contentWidth: 68rem;
+$home-textanimate-width: 32.8rem;
+$home-imgHover-max-width: 500px;
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
