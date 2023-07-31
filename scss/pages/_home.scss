@@ -9,7 +9,7 @@
   max-height: $max-height;
 
   &__content {
-    max-width: 68rem;
+    max-width: $home-contentWidth;
   }
 
   &__content h1 {
@@ -20,13 +20,13 @@
 
   &__text-animate {
     position: relative;
-    width: 32.8rem;
+    width: $home-textanimate-width;
   }
 
   &__text-animate h3 {
     font-size: 3.2rem;
     font-weight: 700;
-    color: #00abf0;
+    color: $main-color;
   }
 
   &__content p {
