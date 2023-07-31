@@ -11,6 +11,7 @@ $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue',
 /// @type List
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
   'Monaco', monospace !default;
+// $code-font-stack: 'Press Start 2P', cursive;
 
 //dark blue
 /// @type Color
@@ -36,9 +37,12 @@ $max-width: 1180px !default;
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  'small': 320px,
+  'extraSmall': 475px,
+  'small': 640px,
   'medium': 768px,
   'large': 1024px,
+  'extraLarge': 1280px,
+  '2xextraLarge': 1536px,
 ) !default;
 
 /// Relative or absolute URL where all assets are served from
