@@ -1,22 +1,68 @@
+//------------------   ABSTRACTS   ------------------------
+
+//variables
+@forward 'abstracts/variables';
+//functions
+@forward 'abstracts/functions';
+//mixins
+@forward 'abstracts/mixins';
+
+//------------------   END ABSTRACTS   ---------------
+
+//------------------   VENDORS   ------------------------
+
+//normalize
+@forward 'vendors/normalize';
+
+//------------------   END VENDORS   --------------------
+
 //------------------   BASE   ------------------------
+
 //base
 @forward 'base/base';
-
 //fonts
 @forward 'base/fonts';
-
 //fonts
 @forward 'base/helpers';
-
 //fonts
 @forward 'base/typography';
 
 //------------------   END BASE   -----------------------
 
+//------------------   LAYOUT   ------------------------
+
+//forms
+@forward 'layout/forms';
+//grid
+@forward 'layout/grid';
+//header
+@forward 'layout/header';
+//navbar
+@forward 'layout/navbar';
+
+//------------------   END LAYOUT   --------------------
+
 //------------------   COMPONENTS   ---------------------
-// @forward 'abstracts';
-// @forward 'layout';
+
+//buttons
+@forward 'components/button';
+//cards
+@forward 'components/cards';
+
 //------------------   END COMPONENTS   -----------------
+
+//------------------   PAGES   ------------------------
+
+//contact
+@forward 'pages/contact';
+//home
+@forward 'pages/home';
+//portfolio
+@forward 'pages/portfolio';
+//skills
+@forward 'pages/skills';
+
+//------------------   END PAGES   --------------------
 
 // .navbar a {
 //   font-size: 1.7rem;
