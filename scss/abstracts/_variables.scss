@@ -12,25 +12,21 @@ $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue',
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
   'Monaco', monospace !default;
 
-/// Copy text color
+//dark blue
 /// @type Color
-$text-color: rgb(34, 34, 34) !default;
+$bg-color: #081b29;
 
-/// Main brand color
+//grey blue
 /// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+$second-bg-color: #112e42;
 
-/// Light grey
+//white
 /// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+$text-color: #ededed;
 
-/// Medium grey
+//cyan
 /// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
+$main-color: #00abf0;
 
 /// Container's maximum width
 /// @type Length

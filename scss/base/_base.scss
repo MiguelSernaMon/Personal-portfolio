@@ -7,6 +7,8 @@
  */
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 /**
@@ -24,12 +26,36 @@ html {
 /**
  * Basic styles for links
  */
-a {
-  color: $brand-color;
-  text-decoration: none;
+// a {
+//   color: $brand-color;
+//   text-decoration: none;
 
-  @include on-event {
-    color: $text-color;
-    text-decoration: underline;
-  }
+//   @include on-event {
+//     color: $text-color;
+//     text-decoration: underline;
+//   }
+// }
+
+/** 
+ * Body element style
+ */
+
+body {
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+/**
+ * All elements base style
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Press Start 2P', cursive;
 }
