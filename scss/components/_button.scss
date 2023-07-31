@@ -1,0 +1,45 @@
+@use '../abstracts/variables' as *;
+
+.btn-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: $btnBox-width;
+  height: $btnBox-height;
+
+  &__btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: $btn-width;
+    height: $btn-heigth;
+    background: $main-color;
+    border: 0.2rem solid $main-color;
+    border-radius: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: $bg-color;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  &__btn:hover {
+    background: $btn-background url($btn-pixelImg);
+    background-size: contain;
+    transition-delay: 0.4s;
+    background-size: 100%;
+    animation: animate 0.8s steps(8) forwards;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -470px;
+  }
+}
