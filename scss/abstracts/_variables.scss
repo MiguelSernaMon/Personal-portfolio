@@ -43,6 +43,11 @@ $home-textanimate-width: 32.8rem;
 $home-imgHover-max-width: 500px;
 
 //projects
+$projects-maxHeight: 1400px;
+$projects-height: 100vh;
+
+//Skills
+$skill-height: 500px;
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
@@ -66,6 +71,7 @@ $base-url: '/assets/' !default;
 /// @type String
 $home-background: '../img/HomeBackgrnd.png';
 $projects-background: '../img/projectsBground.png';
+$skills-background: '../img/skillBackground.png';
 
 /// Background relatives URL for spacers
 /// @type String

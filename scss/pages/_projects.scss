@@ -1,7 +1,7 @@
 @use '../abstracts/variables' as *;
 .projects {
-  max-height: 1400px;
-  height: 100vh;
+  max-height: $projects-height;
+  height: $projects-height;
   position: relative;
 
   & h3 {
