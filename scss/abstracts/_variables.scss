@@ -36,10 +36,13 @@ $max-height: 1060px !default;
 
 ///SectionHomeMeasures
 /// @type Length
+//home
 $home-height: 100vh;
 $home-contentWidth: 68rem;
 $home-textanimate-width: 32.8rem;
 $home-imgHover-max-width: 500px;
+
+//projects
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
@@ -62,6 +65,7 @@ $base-url: '/assets/' !default;
 //Background URL for sections
 /// @type String
 $home-background: '../img/HomeBackgrnd.png';
+$projects-background: '../img/projectsBground.png';
 
 /// Background relatives URL for spacers
 /// @type String
