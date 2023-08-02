@@ -1,12 +1,12 @@
 @use '../abstracts/variables' as *;
 .contact {
   padding-bottom: 8rem;
-  background-image: url('../img/contactBackground.png');
+  background-color: $bg-color2;
   background-size: cover;
 }
 
 .contact h3 {
   text-align: center;
-  font-size: 4rem;
+  font-size: $h3titles-size;
   margin-bottom: 15vh;
 }
