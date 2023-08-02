@@ -39,6 +39,18 @@ $max-height: 1060px !default;
 
 ///SectionHomeMeasures
 /// @type Length
+
+//home::before variables
+$before-position: absolute;
+$before-content: '';
+$before-bg-size: cover;
+$home-before-opacity: 0.3;
+$before-left: 0;
+$before-top: 0;
+$before-width: 100%;
+$before-height: 100%;
+$before-z-index: -1;
+
 //home
 $home-height: 100vh;
 $home-contentWidth: 68rem;
@@ -54,20 +66,45 @@ $container-display: grid;
 $container-gap: 1rem;
 $container-width: 100%;
 $container-imgwidth: 300px;
-//project-before
-$projects-before-position: absolute;
-$projects-before-left: 0;
-$projects-before-top: 0;
-$projects-before-bg-size: cover;
-$projects-before-width: 100%;
-$projects-before-height: 100%;
-$projects-before-content: '';
-$projects-before-z-index: -1;
 
 //Skills
-$skill-height: 500px;
+$skills-height: 500px;
+$skills-position: relative;
+$skills-display: flex;
+$skills-flex-dir: column;
+$skills-justify: center;
+$skills-title-display: flex;
+//skills gif
+$skills-gif-width: 50px;
+$skills-gif-height: 50px;
+$skills-gif-bg-img: '../img/lizard-anim.gif';
+$skills-gif-bg-size: cover;
+//skills title
+$skills-title-margin: 0 0 0 20px;
+$skills-title-width: 80%;
+$skills-title-align: left;
+//skills container
+$skills-container-width: 100%;
+$skills-container-display: flex;
+$skills-container-margin-top: 5%;
+//skills icons
+$skill-icons-display: flex;
+$skill-icons-justify: center;
+$skill-icons-align: center;
+$skill-icons-margin: auto;
+//skills logo
+$skill-logo-height: 100x;
+$skill-logo-width: 100px;
+$skill-logo-margin: 10px;
+$skill-logo-transition: 1s;
+//skills before
+$skills-before-opacity: 0.2;
 
-//contact
+//contact variables
+$contact-padding-bot: 8rem;
+$contact-bg-size: cover;
+//contact title
+$contact-title-margbottom: 15vh;
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
@@ -130,17 +167,6 @@ $home-position: relative;
 $home-align-items: center;
 $home-justify: center;
 $home--padding: 0 9%;
-
-//home::before variables
-$home-before-position: absolute;
-$home-before-content: '';
-$home-before-bg-size: cover;
-$home-before-opacity: 0.3;
-$home-before-left: 0;
-$home-before-top: 0;
-$home-before-width: 100%;
-$home-before-height: 100%;
-$home-before-z-index: -1;
 
 //home-links variables
 $links-bottom-margin: 4rem;

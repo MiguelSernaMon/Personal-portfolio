@@ -1,59 +1,58 @@
 @use '../abstracts/variables' as *;
 .skills {
-  height: $skill-height;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: $skills-height;
+  position: $skills-position;
+  display: $skills-display;
+  flex-direction: $skills-flex-dir;
+  justify-content: $skills-justify;
 
   &__title {
-    display: flex;
+    display: $skills-title-display;
   }
 
   &__gif {
-    width: 50px;
-    height: 50px;
-    background-image: url('../img/lizard-anim.gif');
-    background-size: cover;
+    width: $skills-gif-width;
+    height: $skills-gif-height;
+    background-image: url($skills-gif-bg-img);
+    background-size: $skills-gif-bg-size;
   }
 
   & h3 {
-    font-size: 3.5rem;
-    display: block;
-    margin: 0 0 0 20px;
-    width: 80%;
-    text-align: left;
+    font-size: $h3titles-size;
+    margin: $skills-title-margin;
+    width: $skills-title-width;
+    text-align: $skills-title-align;
   }
 
   &__container {
-    width: 100%;
-    display: flex;
-    margin-top: 5%;
+    width: $skills-container-width;
+    display: $skills-container-display;
+    margin-top: $skills-container-margin-top;
   }
 
   &__icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+    display: $skill-icons-display;
+    justify-content: $skill-icons-justify;
+    align-items: $skill-icons-align;
+    margin: $skill-icons-margin;
   }
   &__logo {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    transition: 1s;
+    width: $skill-logo-width;
+    height: $skill-logo-height;
+    margin: $skill-logo-margin;
+    transition: $skill-logo-transition;
   }
 }
 
 .skills::before {
   content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  position: $before-position;
+  left: $before-content;
+  top: $before-top;
+  width: $before-width;
+  height: $before-height;
   background-image: url($skills-background);
-  background-size: 100% 100%;
-  z-index: -1;
-  opacity: 0.2;
+  background-size: $before-bg-size;
+  z-index: $before-z-index;
+  opacity: $skills-before-opacity;
 }

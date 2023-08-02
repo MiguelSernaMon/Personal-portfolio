@@ -79,14 +79,14 @@
 }
 
 .home::before {
-  position: $home-before-position;
-  content: $home-before-content;
+  position: $before-position;
+  content: $before-content;
   background-image: url($home-background);
-  background-size: $home-before-bg-size;
+  background-size: $before-bg-size;
   opacity: $home-before-opacity;
-  left: $home-before-left;
-  top: $home-before-top;
-  width: $home-before-width;
-  height: $home-before-height;
-  z-index: $home-before-z-index;
+  left: $before-left;
+  top: $before-top;
+  width: $before-width;
+  height: $before-height;
+  z-index: $before-z-index;
 }
