@@ -1,37 +1,37 @@
 @use '../abstracts/variables' as *;
 
 .btn-box {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  width: $btnBox-width;
-  height: $btnBox-height;
+  position: $btnbox-position;
+  display: $btnbox-display;
+  justify-content: $btnbox-justify;
+  width: $btnbox-width;
+  height: $btnbox-height;
 
   &__btn {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    position: $btn-position;
+    display: $btn-display;
+    justify-content: $btn-justify;
+    align-items: $btn-align;
     width: $btn-width;
     height: $btn-heigth;
     background: $main-color;
-    border: 0.2rem solid $main-color;
-    border-radius: 0.8rem;
-    font-size: 1.3rem;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
+    border: $btn-border;
+    border-radius: $btn-border-radius;
+    font-size: $btn-font-size;
+    font-weight: $btn-font-weight;
+    letter-spacing: $btn-letter-spacing;
     color: $bg-color;
-    z-index: 1;
-    overflow: hidden;
-    transition: 0.5s;
+    z-index: $btn-z-index;
+    overflow: $btn-overflow;
+    transition: $btn-transition;
   }
 
   &__btn:hover {
     background: $btn-background url($btn-pixelImg);
-    background-size: contain;
-    transition-delay: 0.4s;
-    background-size: 100%;
-    animation: animate 0.8s steps(8) forwards;
+    background-size: $btn-bg-size;
+    transition-delay: $btn-transition-delay;
+    background-size: $btn-background-size;
+    animation: $btn-animation;
   }
 }
 
