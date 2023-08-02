@@ -1,16 +1,19 @@
 @use '../abstracts/variables' as *;
 .navbar {
+  display: $navbar-display;
+  align-items: $navbar-align-items;
+
   #menu-icon {
-    font-size: 3.6rem;
+    font-size: $menu-icon-size;
     color: $text-color;
     cursor: pointer;
   }
   &__link {
-    font-size: 1.7rem;
+    font-size: $navbar-link-font-size;
     color: $text-color;
-    font-weight: 500;
-    margin-left: 3.5rem;
-    transition: 0.3s;
+    font-weight: $navbar-link-font-weight;
+    margin-left: $navbar-link-margin-left;
+    transition: $navbar-link-transition;
   }
 
   &__link:hover,
