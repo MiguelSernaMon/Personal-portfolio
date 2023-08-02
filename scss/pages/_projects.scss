@@ -22,13 +22,13 @@
 }
 
 .projects::before {
-  position: $projects-before-position;
-  left: $projects-before-left;
-  top: $projects-before-top;
+  position: $before-position;
+  left: $before-left;
+  top: $before-top;
   background-image: url($projects-background);
-  background-size: $projects-before-bg-size;
-  width: $projects-before-width;
-  height: $projects-before-width;
-  content: $projects-before-content;
-  z-index: $projects-before-z-index;
+  background-size: $before-bg-size;
+  width: $before-width;
+  height: $before-width;
+  content: $before-content;
+  z-index: $before-z-index;
 }
