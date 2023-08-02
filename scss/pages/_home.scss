@@ -1,9 +1,9 @@
 @use '../abstracts/variables' as *;
 .home {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
+  display: $home-display;
+  position: $home-position;
+  align-items: $home-align-items;
+  justify-content: $home-justify;
   padding: 0 9%;
   height: $home-height;
   max-height: $max-height;
@@ -13,81 +13,80 @@
   }
 
   &__content h1 {
-    font-size: 5.6rem;
-    font-weight: 700;
-    line-height: 1.3;
+    font-size: $h1titles-size;
+    font-weight: $htitles-weight;
+    line-height: $h1titles-line-height;
   }
 
   &__text-animate {
-    position: relative;
+    position: $text-position;
     width: $home-textanimate-width;
   }
 
   &__text-animate h3 {
-    font-size: 3.2rem;
-    font-weight: 700;
+    font-size: $h3titles-size;
+    font-weight: $htitles-weight;
     color: $main-color;
   }
 
   &__content p {
-    font-size: 1.3rem;
-    margin: 2rem 0 4rem;
+    font-size: $text-size;
+    margin: $text-margin;
   }
 
   &__links-container {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: flex-start;
+    margin-bottom: $links-bottom-margin;
+    display: $links-display;
+    justify-content: $links-justify;
   }
 
   &__shortlink {
-    width: 50px;
-    height: 50px;
-    max-width: 50px;
-    max-height: 50px;
-    margin-right: 10px;
-    transition: 600ms;
+    width: $shortlink-width;
+    height: $shortlink-height;
+    margin-right: $shortlink-margin-right;
+    transition: $shortlink-transition;
   }
 
   &__shortlink:hover {
-    transform: translateY(-3px) scale(1.1);
+    transform: translateY($shortlink-transformY) scale($shortlink-scale);
   }
 
   &__shortlink-icon {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
+    object-fit: $shortlink-icon-objfit;
+    width: $shortlink-icon-width;
+    height: $shortlink-icon-height;
   }
 
   &__imgHover {
-    width: 45%;
-    height: 45%;
-    background: transparent;
-    border: 2px solid #ff0000;
-    max-width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: $imgHover-width;
+    height: $imgHover-height;
+    background: $imgHover-background;
+    border: $imgHover-border;
+    max-width: $imgHover-max-width;
+    max-height: $imgHover-max-height;
+    display: $imgHover-display;
+    justify-content: $imgHover-justify;
+    align-items: $imgHover-align;
   }
 
   &__img-profile {
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-    object-fit: cover;
-    width: 70%;
+    border-radius: $img-profile-border-radius;
+    display: $img-profile-display;
+    margin: $img-profile-margin;
+    object-fit: $img-profile-objfit;
+    width: $img-profile-width;
   }
 }
 
 .home::before {
-  position: absolute;
-  content: '';
+  position: $home-before-position;
+  content: $home-before-content;
   background-image: url($home-background);
-  background-size: cover;
-  opacity: 0.3;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  background-size: $home-before-bg-size;
+  opacity: $home-before-opacity;
+  left: $home-before-left;
+  top: $home-before-top;
+  width: $home-before-width;
+  height: $home-before-height;
+  z-index: $home-before-z-index;
 }
