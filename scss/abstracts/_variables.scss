@@ -52,10 +52,64 @@ $before-height: 100%;
 $before-z-index: -1;
 
 //home
+
+//titles dimensions
+$h1titles-size: 5.6rem;
+$htitles-weight: 700;
+$h1titles-line-height: 1.3;
+$h3titles-size: 4.5rem;
+$h3titles-align: center;
+$h3titles-span-color: red;
+
+//text animate variables
+$text-size: 1.3rem;
+$text-position: relative;
+$text-margin: 2rem 0 4rem;
+
 $home-height: 100vh;
 $home-contentWidth: 68rem;
 $home-textanimate-width: 32.8rem;
 $home-imgHover-max-width: 500px;
+
+//home variables
+$home-display: flex;
+$home-position: relative;
+$home-align-items: center;
+$home-justify: center;
+$home--padding: 0 9%;
+
+//home-links variables
+$links-bottom-margin: 4rem;
+$links-display: flex;
+$links-justify: flex-start;
+$shortlink-width: 50px;
+$shortlink-height: 50px;
+$shortlink-margin-right: 10px;
+$shortlink-transition: 600ms;
+
+$shortlink-transformY: -3px;
+$shortlink-scale: 1.1;
+$shortlink-icon-objfit: contain;
+$shortlink-icon-width: 100%;
+$shortlink-icon-height: 100%;
+
+//imgHover variables
+$imgHover-width: 45%;
+$imgHover-height: 45%;
+$imgHover-background: transparent;
+$imgHover-border: 2px solid red;
+$imgHover-max-width: 500px;
+$imgHover-max-height: 500px;
+$imgHover-display: flex;
+$imgHover-justify: center;
+$imgHover-align: center;
+
+//img-profile variables
+$img-profile-border-radius: 50%;
+$img-profile-display: block;
+$img-profile-margin: auto;
+$img-profile-objfit: cover;
+$img-profile-width: 70%;
 
 //projects
 $projects-maxHeight: 1400px;
@@ -106,18 +160,6 @@ $contact-bg-size: cover;
 //contact title
 $contact-title-margbottom: 15vh;
 
-/// Breakpoints map
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
-$breakpoints: (
-  'extraSmall': 475px,
-  'small': 640px,
-  'medium': 768px,
-  'large': 1024px,
-  'extraLarge': 1280px,
-  '2xextraLarge': 1536px,
-) !default;
-
 /// Relative or absolute URL where all assets are served from
 /// @type String
 /// @example scss - When using a CDN
@@ -137,66 +179,69 @@ $background-layer1: '../img/layer1.png';
 $background-layer2: '../img/layer2.png';
 $background-layer3: '../img/layer3.png';
 
-/// Button's box dimensions
-/// @type length
-$btnBox-width: 38.5rem;
-$btnBox-height: 5rem;
+/// Button's box variables
+$btnbox-width: 38.5rem;
+$btnbox-height: 5rem;
+$btnbox-position: relative;
+$btnbox-display: flex;
+$btnbox-justify: space-between;
 
 ///Buttons dimensions
 $btn-width: 18rem;
 $btn-heigth: 100%;
 $btn-background: #c64917;
 $btn-pixelImg: '../img/pixel.png';
+$btn-position: relative;
+$btn-display: inline-flex;
+$btn-justify: center;
+$btn-align: center;
+$btn-border: 0.2rem solid $main-color;
+$btn-border-radius: 0.8rem;
+$btn-font-size: 1.3rem;
+$btn-font-weight: 600;
+$btn-letter-spacing: 0.1rem;
+$btn-z-index: 1;
+$btn-overflow: hidden;
+$btn-transition: 0.5s;
+//btn hover
+$btn-bg-size: contain;
+$btn-transition-delay: 0.4s;
+$btn-background-size: 100%;
+$btn-animation: animate 0.8s steps(8) forwards;
 
-//titles dimensions
-$h1titles-size: 5.6rem;
-$htitles-weight: 700;
-$h1titles-line-height: 1.3;
-$h3titles-size: 4.5rem;
-$h3titles-align: center;
-$h3titles-span-color: red;
+//Project cards variables
+$card-position: relative;
+$card-border: solid 2px red;
+$card-width: 100%;
+$card-height: 100%;
+$card-text-align: center;
+$card-box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
+  rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+$card-transition: 500ms;
+//card-hover
+$card-hover-tranlateY: -3px;
+$card-hover-scale: 1.1;
+//card-img
+$card-img-objfit: cover;
+$card-img-width: 100%;
+$card-img-height: calc(100% - 6.8rem);
+//card-title
+$card-title-padding: 2rem 0.5rem;
+$card-title-color: white;
+$card-title-decoration: none;
+$card-title-bg-color: red;
+$card-title-position: absolute;
+$card-title-width: 100%;
+$card-title-bottom: 0;
 
-//text animate variables
-$text-size: 1.3rem;
-$text-position: relative;
-$text-margin: 2rem 0 4rem;
-
-//home variables
-$home-display: flex;
-$home-position: relative;
-$home-align-items: center;
-$home-justify: center;
-$home--padding: 0 9%;
-
-//home-links variables
-$links-bottom-margin: 4rem;
-$links-display: flex;
-$links-justify: flex-start;
-$shortlink-width: 50px;
-$shortlink-height: 50px;
-$shortlink-margin-right: 10px;
-$shortlink-transition: 600ms;
-
-$shortlink-transformY: -3px;
-$shortlink-scale: 1.1;
-$shortlink-icon-objfit: contain;
-$shortlink-icon-width: 100%;
-$shortlink-icon-height: 100%;
-
-//imgHover variables
-$imgHover-width: 45%;
-$imgHover-height: 45%;
-$imgHover-background: transparent;
-$imgHover-border: 2px solid red;
-$imgHover-max-width: 500px;
-$imgHover-max-height: 500px;
-$imgHover-display: flex;
-$imgHover-justify: center;
-$imgHover-align: center;
-
-//img-profile variables
-$img-profile-border-radius: 50%;
-$img-profile-display: block;
-$img-profile-margin: auto;
-$img-profile-objfit: cover;
-$img-profile-width: 70%;
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'extraSmall': 475px,
+  'small': 640px,
+  'medium': 768px,
+  'large': 1024px,
+  'extraLarge': 1280px,
+  '2xextraLarge': 1536px,
+) !default;
