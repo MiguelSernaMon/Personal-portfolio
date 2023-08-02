@@ -48,6 +48,21 @@ $home-imgHover-max-width: 500px;
 //projects
 $projects-maxHeight: 1400px;
 $projects-height: 100vh;
+$projects-position: relative;
+//project-container
+$container-display: grid;
+$container-gap: 1rem;
+$container-width: 100%;
+$container-imgwidth: 300px;
+//project-before
+$projects-before-position: absolute;
+$projects-before-left: 0;
+$projects-before-top: 0;
+$projects-before-bg-size: cover;
+$projects-before-width: 100%;
+$projects-before-height: 100%;
+$projects-before-content: '';
+$projects-before-z-index: -1;
 
 //Skills
 $skill-height: 500px;
@@ -101,6 +116,8 @@ $h1titles-size: 5.6rem;
 $htitles-weight: 700;
 $h1titles-line-height: 1.3;
 $h3titles-size: 4.5rem;
+$h3titles-align: center;
+$h3titles-span-color: red;
 
 //text animate variables
 $text-size: 1.3rem;

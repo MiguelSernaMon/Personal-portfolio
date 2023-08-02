@@ -2,36 +2,33 @@
 .projects {
   max-height: $projects-height;
   height: $projects-height;
-  position: relative;
+  position: $projects-position;
 
   & h3 {
     font-size: $h3titles-size;
-    display: block;
-    margin: auto;
-    width: 80%;
-    text-align: center;
+    text-align: $h3titles-align;
   }
 
   & h3 span {
-    color: red;
+    color: $h3titles-span-color;
   }
 
   &__container {
-    display: grid;
-    gap: 1rem;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: $container-display;
+    gap: $container-gap;
+    width: $container-width;
+    grid-template-columns: repeat(auto-fit, minmax($container-imgwidth, 1fr));
   }
 }
 
 .projects::before {
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: $projects-before-position;
+  left: $projects-before-left;
+  top: $projects-before-top;
   background-image: url($projects-background);
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  content: '';
-  z-index: -1;
+  background-size: $projects-before-bg-size;
+  width: $projects-before-width;
+  height: $projects-before-width;
+  content: $projects-before-content;
+  z-index: $projects-before-z-index;
 }
