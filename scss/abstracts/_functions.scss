@@ -1,0 +1,18 @@
+@use 'sass:math';
+
+//Function who convert pixels into rem
+@function rem($pixel) {
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, 16) + rem;
+  } @else {
+    @error "Don\'t whe using the rem() function: only numbers)";
+  }
+}
+//Fucntion who convert pixels into em
+@function em($pixel) {
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, 16) + em;
+  } @else {
+    @error "Don\'t whe using the rem() function: only numbers)";
+  }
+}
