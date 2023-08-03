@@ -2,6 +2,8 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
+@use './functions' as *;
+
 /// Regular font family
 /// @type List
 $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue',
@@ -34,8 +36,8 @@ $main-color: #00abf0;
 
 /// Container's maximum width and height
 /// @type Length
-$max-width: 1180px !default;
-$max-height: 1060px !default;
+$max-width: rem(1180) !default;
+$max-height: rem(1060) !default;
 
 ///SectionHomeMeasures
 /// @type Length
@@ -66,12 +68,10 @@ $text-size: 1.3rem;
 $text-position: relative;
 $text-margin: 2rem 0 4rem;
 
+//home variables
 $home-height: 100vh;
 $home-contentWidth: 68rem;
 $home-textanimate-width: 32.8rem;
-$home-imgHover-max-width: 500px;
-
-//home variables
 $home-display: flex;
 $home-position: relative;
 $home-align-items: center;
@@ -82,12 +82,12 @@ $home--padding: 0 9%;
 $links-bottom-margin: 4rem;
 $links-display: flex;
 $links-justify: flex-start;
-$shortlink-width: 50px;
-$shortlink-height: 50px;
-$shortlink-margin-right: 10px;
+$shortlink-width: rem(50);
+$shortlink-height: rem(50);
+$shortlink-margin-right: rem(10);
 $shortlink-transition: 600ms;
 
-$shortlink-transformY: -3px;
+$shortlink-transformY: rem(-3);
 $shortlink-scale: 1.1;
 $shortlink-icon-objfit: contain;
 $shortlink-icon-width: 100%;
@@ -98,8 +98,8 @@ $imgHover-width: 45%;
 $imgHover-height: 45%;
 $imgHover-background: transparent;
 $imgHover-border: 2px solid red;
-$imgHover-max-width: 500px;
-$imgHover-max-height: 500px;
+$imgHover-max-width: rem(500);
+$imgHover-max-height: rem(500);
 $imgHover-display: flex;
 $imgHover-justify: center;
 $imgHover-align: center;
@@ -112,29 +112,29 @@ $img-profile-objfit: cover;
 $img-profile-width: 70%;
 
 //projects
-$projects-maxHeight: 1400px;
+$projects-maxHeight: rem(1400);
 $projects-height: 100vh;
 $projects-position: relative;
 //project-container
 $container-display: grid;
 $container-gap: 1rem;
 $container-width: 100%;
-$container-imgwidth: 300px;
+$container-imgwidth: rem(300);
 
 //Skills
-$skills-height: 500px;
+$skills-height: rem(500);
 $skills-position: relative;
 $skills-display: flex;
 $skills-flex-dir: column;
 $skills-justify: center;
 $skills-title-display: flex;
 //skills gif
-$skills-gif-width: 50px;
-$skills-gif-height: 50px;
+$skills-gif-width: rem(50);
+$skills-gif-height: rem(50);
 $skills-gif-bg-img: '../img/lizard-anim.gif';
 $skills-gif-bg-size: cover;
 //skills title
-$skills-title-margin: 0 0 0 20px;
+$skills-title-margin: 0 0 0 rem(20);
 $skills-title-width: 80%;
 $skills-title-align: left;
 //skills container
@@ -147,9 +147,9 @@ $skill-icons-justify: center;
 $skill-icons-align: center;
 $skill-icons-margin: auto;
 //skills logo
-$skill-logo-height: 100x;
-$skill-logo-width: 100px;
-$skill-logo-margin: 10px;
+$skill-logo-height: rem(100);
+$skill-logo-width: rem(100);
+$skill-logo-margin: rem(10);
 $skill-logo-transition: 1s;
 //skills before
 $skills-before-opacity: 0.2;
@@ -219,7 +219,7 @@ $card-box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
   rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
 $card-transition: 500ms;
 //card-hover
-$card-hover-tranlateY: -3px;
+$card-hover-tranlateY: rem(-3);
 $card-hover-scale: 1.1;
 //card-img
 $card-img-objfit: cover;
@@ -249,7 +249,7 @@ $form-input-width: 100%;
 $form-input-height: 100%;
 $form-input-padding: 2.5rem;
 $form-input-bg: transparent;
-$form-input-border-radius: 10px;
+$form-input-border-radius: rem(10);
 $form-input-border: solid 0.5rem $main-color;
 $form-input-font-size: 1.4rem;
 $form-textarea-line-height: 2rem;
@@ -282,11 +282,14 @@ $navbar-link-transition: 0.3s;
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
-$breakpoints: (
-  'extraSmall': 475px,
-  'small': 640px,
-  'medium': 768px,
-  'large': 1024px,
-  'extraLarge': 1280px,
+
+//here we need to put the measures in terms of em
+
+$breakpoints-down: (
   '2xextraLarge': 1536px,
+  'extraLarge': 1280px,
+  'large': 1024px,
+  'medium': 768px,
+  'small': 640px,
+  'extraSmall': 475px,
 ) !default;
