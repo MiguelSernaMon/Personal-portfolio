@@ -11,11 +11,4 @@
   justify-content: $header-justify;
   align-items: $header-align;
   z-index: $header-z-index;
-
-  &__logo {
-    font-family: 'sabo';
-    font-size: $header-logo-font-size;
-    color: $text-color;
-    font-weight: $header-logo-font-weight;
-  }
 }

@@ -1,0 +1,149 @@
+@use '../abstracts/variables' as *;
+
+* {
+  font-family: $text-font-stack;
+}
+
+body {
+  color: $text-color;
+}
+
+///btns
+
+.btn-box__btn {
+  font-family: $titles-font-stack;
+  font-size: $btn-font-size;
+  letter-spacing: $btn-letter-spacing;
+  color: $bg-color;
+}
+
+//cards:
+
+.projects__title {
+  font-size: $text-size;
+  color: $card-title-color;
+  text-decoration: $card-title-decoration;
+}
+
+//Form
+
+.form {
+  text-align: $form-align;
+
+  &__input {
+    color: $main-color;
+    font-size: $form-input-font-size;
+
+    &::placeholder {
+      color: $main-color;
+      font-size: $form-input-font-size;
+    }
+  }
+
+  &__textarea {
+    font-size: $form-input-font-size;
+    color: $main-color;
+    line-height: $form-textarea-line-height;
+
+    &::placeholder {
+      color: $main-color;
+    }
+  }
+}
+
+//header logo
+.header__logo {
+  font-family: $titles-font-stack;
+  font-size: $header-logo-font-size;
+  color: $text-color;
+}
+
+//navbar icon
+#menu-icon {
+  font-size: $menu-icon-size;
+  color: $text-color;
+}
+
+//navbar links
+
+.navbar__link {
+  font-family: $titles-font-stack;
+  font-size: $navbar-link-font-size;
+  color: $text-color;
+  &:hover,
+  &.active {
+    color: $main-color;
+  }
+}
+
+//contact
+
+.contact h3 {
+  font-family: $titles-font-stack;
+  text-align: $h3titles-align;
+  font-size: $h3titles-size;
+
+  & span {
+    color: red;
+    font-family: $titles-font-stack;
+  }
+}
+
+//home
+
+.home {
+  &__content h1 {
+    font-size: $h1titles-size;
+    line-height: $h1titles-line-height;
+    font-family: $titles-font-stack;
+
+    & span {
+      color: red;
+      font-family: 'sabo';
+    }
+  }
+
+  &__text-animate h3 {
+    font-family: $text-font-stack;
+    font-size: 3rem;
+    color: $main-color;
+  }
+
+  &__content p {
+    font-family: $text-font-stack;
+    color: $text-color2;
+    line-height: 2rem;
+    font-weight: $text-weight;
+    font-size: $text-size;
+  }
+}
+
+//projects
+
+.projects {
+  & h3 {
+    font-family: $titles-font-stack;
+    font-size: $h3titles-size;
+    text-align: $h3titles-align;
+
+    & span {
+      font-family: $titles-font-stack;
+      color: $h3titles-span-color;
+    }
+  }
+}
+
+//skills
+
+.skills {
+  & h3 {
+    font-family: $titles-font-stack;
+    font-size: $h3titles-size;
+    text-align: $skills-title-align;
+
+    & span {
+      font-family: $titles-font-stack;
+      color: red;
+    }
+  }
+}

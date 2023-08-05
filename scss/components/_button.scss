@@ -8,7 +8,6 @@
   height: $btnbox-height;
 
   &__btn {
-    font-family: 'sabo';
     position: $btn-position;
     display: $btn-display;
     justify-content: $btn-justify;
@@ -18,10 +17,6 @@
     background: $main-color;
     border: $btn-border;
     border-radius: $btn-border-radius;
-    font-size: $btn-font-size;
-    font-weight: $btn-font-weight;
-    letter-spacing: $btn-letter-spacing;
-    color: $bg-color;
     z-index: $btn-z-index;
     overflow: $btn-overflow;
     transition: $btn-transition;

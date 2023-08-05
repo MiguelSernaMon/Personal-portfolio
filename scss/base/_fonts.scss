@@ -1,3 +1,11 @@
 // -----------------------------------------------------------------------------
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
+@font-face {
+  font-family: sabo;
+  src: url('../../img/fonts/Sabo-Filled.otf') format('opentype');
+}
+@font-face {
+  font-family: sabo-regular;
+  src: url('../../img/fonts/Sabo-Regular.otf') format('opentype');
+}

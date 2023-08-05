@@ -1,6 +1,5 @@
 @use '../abstracts/variables' as *;
 .form {
-  text-align: $form-align;
   width: $form-width;
   margin: $form-margin;
 
@@ -21,13 +20,6 @@
     background: $form-input-bg;
     border-radius: $form-input-border-radius;
     border: $form-input-border;
-    color: $main-color;
-    font-size: $form-input-font-size;
-  }
-
-  &__input::placeholder {
-    color: $main-color;
-    font-size: $form-input-font-size;
   }
 
   &__textarea-field {
@@ -37,17 +29,12 @@
   &__textarea {
     width: $form-input-width;
     height: $form-input-height;
-    font-size: $form-input-font-size;
+
     padding: $form-input-padding;
     background: $form-input-bg;
     border: $form-input-border;
-    color: $main-color;
-    border-radius: $form-input-border-radius;
-    line-height: $form-textarea-line-height;
-  }
 
-  &__textarea::placeholder {
-    color: $main-color;
+    border-radius: $form-input-border-radius;
   }
 
   .btn-box {

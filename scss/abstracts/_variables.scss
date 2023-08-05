@@ -3,23 +3,14 @@
 // -----------------------------------------------------------------------------
 
 @use './functions' as *;
-
-@font-face {
-  font-family: sabo;
-  src: url('../../img/fonts/Sabo-Filled.otf') format('opentype');
-}
-@font-face {
-  font-family: sabo-regular;
-  src: url('../../img/fonts/Sabo-Regular.otf') format('opentype');
-}
-
+@forward '../base/fonts';
 /// Logo font family
 /// @type List
 $text-font-stack: 'Press Start 2P', cursive;
 
 ///Page font family
 /// @type List
-$logo-font-stack: 'sabo', sans-serif;
+$titles-font-stack: 'sabo', sans-serif;
 
 /// Code (monospace) font family
 /// @type List
@@ -69,7 +60,6 @@ $before-z-index: -1;
 
 //titles dimensions
 $h1titles-size: 5.6rem;
-$htitles-weight: 700;
 $h1titles-line-height: 1.3;
 $h3titles-size: 4.5rem;
 $h3titles-align: center;
@@ -79,6 +69,8 @@ $h3titles-span-color: red;
 $text-size: 1.3rem;
 $text-position: relative;
 $text-margin: 2rem 0 4rem;
+$text-weight: bolder;
+$text-color2: hsl(0, 1%, 69%);
 
 //home variables
 $home-height: 100vh;
@@ -210,7 +202,6 @@ $btn-align: center;
 $btn-border: 0.2rem solid $main-color;
 $btn-border-radius: 0.8rem;
 $btn-font-size: 1.3rem;
-$btn-font-weight: 600;
 $btn-letter-spacing: 0.1rem;
 $btn-z-index: 1;
 $btn-overflow: hidden;
@@ -279,7 +270,6 @@ $header-align: center;
 $header-z-index: 100;
 //header logo
 $header-logo-font-size: 2.5rem;
-$header-logo-font-weight: 600;
 
 //navbar variables
 $navbar-display: flex;
@@ -287,7 +277,6 @@ $navbar-align-items: center;
 $menu-icon-size: 3.6rem;
 //navbar-links
 $navbar-link-font-size: 1.7rem;
-$navbar-link-font-weight: 500;
 $navbar-link-margin-left: 3.5rem;
 $navbar-link-transition: 0.3s;
 
