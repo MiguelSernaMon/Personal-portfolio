@@ -15,6 +15,12 @@
     font-size: $h1titles-size;
     font-weight: $htitles-weight;
     line-height: $h1titles-line-height;
+    font-family: $logo-font-stack;
+
+    & span {
+      color: red;
+      font-family: 'sabo';
+    }
   }
 
   &__text-animate {
@@ -23,12 +29,17 @@
   }
 
   &__text-animate h3 {
-    font-size: $h3titles-size;
+    font-family: $text-font-stack;
+    font-size: 3rem;
     font-weight: $htitles-weight;
     color: $main-color;
   }
 
   &__content p {
+    font-family: $text-font-stack;
+    color: hsl(0, 1%, 69%);
+    line-height: 2rem;
+    font-weight: bolder;
     font-size: $text-size;
     margin: $text-margin;
   }

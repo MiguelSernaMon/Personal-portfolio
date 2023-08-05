@@ -5,11 +5,13 @@
   position: $projects-position;
 
   & h3 {
+    font-family: 'sabo';
     font-size: $h3titles-size;
     text-align: $h3titles-align;
   }
 
   & h3 span {
+    font-family: 'sabo';
     color: $h3titles-span-color;
   }
 
