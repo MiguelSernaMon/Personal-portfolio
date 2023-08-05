@@ -4,10 +4,22 @@
 
 @use './functions' as *;
 
-/// Regular font family
+@font-face {
+  font-family: sabo;
+  src: url('../../img/fonts/Sabo-Filled.otf') format('opentype');
+}
+@font-face {
+  font-family: sabo-regular;
+  src: url('../../img/fonts/Sabo-Regular.otf') format('opentype');
+}
+
+/// Logo font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue',
-  'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Press Start 2P', cursive;
+
+///Page font family
+/// @type List
+$logo-font-stack: 'sabo', sans-serif;
 
 /// Code (monospace) font family
 /// @type List

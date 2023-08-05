@@ -18,10 +18,16 @@
   }
 
   & h3 {
+    font-family: 'sabo';
     font-size: $h3titles-size;
     margin: $skills-title-margin;
     width: $skills-title-width;
     text-align: $skills-title-align;
+
+    & span {
+      font-family: 'sabo';
+      color: red;
+    }
   }
 
   &__container {
