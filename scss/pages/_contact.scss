@@ -6,13 +6,5 @@
 }
 
 .contact h3 {
-  font-family: 'sabo';
-  text-align: $h3titles-align;
-  font-size: $h3titles-size;
   margin-bottom: $contact-title-margbottom;
-
-  & span {
-    color: red;
-    font-family: 'sabo';
-  }
 }

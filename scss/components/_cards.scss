@@ -20,11 +20,8 @@
     height: $card-img-height;
   }
 
-  &__title {
-    font-size: $text-size;
+  .projects__title {
     padding: $card-title-padding;
-    color: $card-title-color;
-    text-decoration: $card-title-decoration;
     background-color: $card-title-bg-color;
     position: $card-title-position;
     width: $card-title-width;

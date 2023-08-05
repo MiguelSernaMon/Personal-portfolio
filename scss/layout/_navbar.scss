@@ -4,21 +4,10 @@
   align-items: $navbar-align-items;
 
   #menu-icon {
-    font-size: $menu-icon-size;
-    color: $text-color;
     cursor: pointer;
   }
   &__link {
-    font-family: 'sabo';
-    font-size: $navbar-link-font-size;
-    color: $text-color;
-    font-weight: $navbar-link-font-weight;
     margin-left: $navbar-link-margin-left;
     transition: $navbar-link-transition;
-  }
-
-  &__link:hover,
-  &__link.active {
-    color: $main-color;
   }
 }
