@@ -3,6 +3,13 @@
   max-height: $projects-height;
   height: $projects-height;
   position: $projects-position;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & h3 {
+    margin-bottom: 10vh;
+  }
 
   &__container {
     display: $container-display;
