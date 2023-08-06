@@ -5,9 +5,13 @@
   display: $skills-display;
   flex-direction: $skills-flex-dir;
   justify-content: $skills-justify;
+  padding: $skills-padding;
+  align-items: center;
 
   &__title {
     display: $skills-title-display;
+    position: $skills-title-position;
+    top: $skills-title-top;
   }
 
   &__gif {
@@ -15,6 +19,9 @@
     height: $skills-gif-height;
     background-image: url($skills-gif-bg-img);
     background-size: $skills-gif-bg-size;
+    position: $skills-gif-position;
+    left: $skills-gif-left;
+    top: $skills-gif-top;
   }
 
   & h3 {

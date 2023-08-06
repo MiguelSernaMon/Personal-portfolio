@@ -105,14 +105,14 @@ body {
 
   &__text-animate h3 {
     font-family: $text-font-stack;
-    font-size: 3rem;
+    font-size: $h3titles-size;
     color: $main-color;
   }
 
   &__content p {
     font-family: $text-font-stack;
     color: $text-color2;
-    line-height: 2rem;
+    line-height: $text-line-height;
     font-weight: $text-weight;
     font-size: $text-size;
   }
@@ -123,7 +123,7 @@ body {
 .projects {
   & h3 {
     font-family: $titles-font-stack;
-    font-size: $h3titles-size;
+    font-size: $h3titles-size2;
     text-align: $h3titles-align;
 
     & span {
@@ -138,7 +138,7 @@ body {
 .skills {
   & h3 {
     font-family: $titles-font-stack;
-    font-size: $h3titles-size;
+    font-size: $h3titles-size2;
     text-align: $skills-title-align;
 
     & span {
