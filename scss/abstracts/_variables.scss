@@ -294,10 +294,13 @@ $navbar-link-transition: 0.3s;
 //here we need to put the measures in terms of em
 
 $breakpoints-down: (
-  'xextraLarge': em(1535.8),
-  'extraLarge': em(1279.8),
-  'large': em(1023.8),
-  'medium': em(767.8),
-  'small': em(639.8),
-  'extraSmall': em(474.8),
+  '4kscreen': em(3840),
+  '2kscreen': em(2560),
+  'fhdscreen': em(1920),
+  'xextraLarge': em(1536),
+  'extraLarge': em(1280),
+  'large': em(1024),
+  'medium': em(768),
+  'small': em(640),
+  'extraSmall': em(475),
 ) !default;
