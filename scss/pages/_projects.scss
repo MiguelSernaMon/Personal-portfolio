@@ -1,4 +1,6 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .projects {
   max-height: $projects-height;
   height: $projects-height;
@@ -16,6 +18,35 @@
     gap: $container-gap;
     width: $container-width;
     grid-template-columns: repeat(auto-fit, minmax($container-imgwidth, 1fr));
+
+    //2k
+    @include breakpoint(2kscreen) {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      background: red;
+    }
+
+    // //fhd
+    // @include breakpoint(fhdscreen) {
+    // }
+
+    // //xextraLarge
+    // @include breakpoint(xextraLarge) {
+    // }
+    // //extraLarge
+    // @include breakpoint(extraLarge) {
+    // }
+    // //large
+    // @include breakpoint(large) {
+    // }
+    // //medium
+    // @include breakpoint(medium) {
+    // }
+    // //small
+    // @include breakpoint(small) {
+    // }
+    // //extraSmall
+    // @include breakpoint(extraSmall) {
+    // }
   }
 }
 
