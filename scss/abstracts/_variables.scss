@@ -67,11 +67,11 @@ $h3titles-align: center;
 $h3titles-span-color: red;
 
 //text animate variables
-$text-size: clamp(1.75rem, 1rem + 2vw, 2.8rem);
+$text-size: clamp(0.2rem, 0.6rem + 1vw, 2.8rem);
 $text-position: relative;
 $text-margin: 4rem 0 4rem;
 $text-weight: bolder;
-$text-line-height: 4rem;
+$text-line-height: clamp(1.5rem, 0.4rem + 2vw, 4rem);
 $text-color2: hsl(0, 1%, 69%);
 
 //home variables
@@ -200,7 +200,7 @@ $btnbox-justify: space-between;
 ///Buttons dimensions
 $btn-width: clamp(16.5rem, 1rem + 5vw, 51.5rem);
 $btn-heigth: 100%;
-$btn-background: #c64917;
+$btn-background: #795040;
 $btn-pixelImg: '../img/pixel.png';
 $btn-position: relative;
 $btn-display: inline-flex;
@@ -283,7 +283,7 @@ $navbar-display: flex;
 $navbar-align-items: center;
 $menu-icon-size: 7.5rem;
 //navbar-links
-$navbar-link-font-size: clamp(1.5rem, 1rem + 1.8vw, 6.5rem);
+$navbar-link-font-size: clamp(1.5rem, 1rem + 1.3vw, 5.5rem);
 $navbar-link-margin-left: 10.5rem;
 $navbar-link-transition: 0.3s;
 
@@ -294,7 +294,7 @@ $navbar-link-transition: 0.3s;
 //here we need to put the measures in terms of em
 
 $breakpoints-down: (
-  '2kscreen': 2560px,
+  '2kscreen': em(2560),
   'fhdscreen': em(1920),
   'xextraLarge': em(1536),
   'extraLarge': em(1280),

@@ -1,5 +1,6 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
+@use '../abstracts/functions' as *;
 .skills {
   height: $skills-height;
   position: $skills-position;
@@ -13,6 +14,10 @@
     display: $skills-title-display;
     position: $skills-title-position;
     top: $skills-title-top;
+
+    @include breakpoint('2kscreen') {
+      top: -10rem;
+    }
   }
 
   &__gif {
@@ -29,6 +34,10 @@
       width: 150px;
       height: 150px;
       top: 0rem;
+    }
+    //fhd
+    @include breakpoint('fhdscreen') {
+      top: -3rem;
     }
   }
 
@@ -50,8 +59,8 @@
     margin: $skill-icons-margin;
   }
   &__logo {
-    width: $skill-logo-width;
-    height: $skill-logo-height;
+    width: rem(200);
+    height: rem(200);
     margin: $skill-logo-margin;
     transition: $skill-logo-transition;
   }
