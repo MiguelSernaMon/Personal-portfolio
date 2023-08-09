@@ -28,29 +28,30 @@
     @include breakpoint('2kscreen') {
       grid-template-columns: repeat(auto-fit, minmax(rem(700), 1fr));
     }
+    //fhd
+    @include breakpoint('fhdscreen') {
+      grid-template-columns: repeat(auto-fit, minmax(rem(500), 1fr));
+      background: green;
+    }
 
-    // //fhd
-    // @include breakpoint(fhdscreen) {
-    // }
-
-    // //xextraLarge
-    // @include breakpoint(xextraLarge) {
-    // }
-    // //extraLarge
-    // @include breakpoint(extraLarge) {
-    // }
-    // //large
-    // @include breakpoint(large) {
-    // }
-    // //medium
-    // @include breakpoint(medium) {
-    // }
-    // //small
-    // @include breakpoint(small) {
-    // }
-    // //extraSmall
-    // @include breakpoint(extraSmall) {
-    // }
+    //xextraLarge
+    @include breakpoint('xextraLarge') {
+    }
+    //extraLarge
+    @include breakpoint('extraLarge') {
+    }
+    //large
+    @include breakpoint('large') {
+    }
+    //medium
+    @include breakpoint('medium') {
+    }
+    //small
+    @include breakpoint('small') {
+    }
+    //extraSmall
+    @include breakpoint('extraSmall') {
+    }
   }
 }
 

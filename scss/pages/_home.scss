@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 .home {
   display: $home-display;
   position: $home-position;
@@ -7,8 +8,55 @@
   padding: 0 9%;
   height: $home-height;
 
+  //large
+  @include breakpoint('large') {
+    flex-direction: column-reverse;
+    padding-top: 10rem;
+  }
+  //medium
+  @include breakpoint('medium') {
+    padding-top: 17rem;
+  }
+  //small
+  @include breakpoint('small') {
+  }
+  //extraSmall
+  @include breakpoint('extraSmall') {
+    padding-top: 2rem;
+  }
+
   &__content {
     max-width: $home-contentWidth;
+
+    //fhd
+    @include breakpoint('fhdscreen') {
+      max-width: 100rem;
+      margin-top: 4rem;
+    }
+    //xextraLarge
+    @include breakpoint('xextraLarge') {
+      max-width: 80rem;
+      margin-top: 15rem;
+    }
+    //extraLarge
+    @include breakpoint('extraLarge') {
+      max-width: 70rem;
+      margin-top: 20rem;
+    }
+    //large
+    @include breakpoint('large') {
+      width: 100%;
+      margin-top: 0;
+    }
+    //medium
+    @include breakpoint('medium') {
+    }
+    //small
+    @include breakpoint('small') {
+    }
+    //extraSmall
+    @include breakpoint('extraSmall') {
+    }
   }
 
   &__text-animate {
@@ -32,6 +80,12 @@
     height: $shortlink-height;
     margin-right: $shortlink-margin-right;
     transition: $shortlink-transition;
+
+    //fhd
+    @include breakpoint('fhdscreen') {
+      width: 7rem;
+      height: 7rem;
+    }
   }
 
   &__shortlink:hover {
