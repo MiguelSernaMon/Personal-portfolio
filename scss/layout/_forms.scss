@@ -1,7 +1,19 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 .form {
   width: $form-width;
   margin: $form-margin;
+
+  //large
+  @include breakpoint('large') {
+    width: 100%;
+  }
+  //small
+  @include breakpoint('small') {
+  }
+  //extraSmall
+  @include breakpoint('extraSmall') {
+  }
 
   &__input-box {
     display: $input-box-display;

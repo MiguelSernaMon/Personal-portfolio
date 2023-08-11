@@ -34,10 +34,12 @@ body {
   &__input {
     color: $main-color;
     font-size: $form-input-font-size;
+    font-weight: bold;
 
     &::placeholder {
       color: $main-color;
       font-size: $form-input-font-size;
+      font-weight: bold;
     }
   }
 
@@ -48,6 +50,7 @@ body {
 
     &::placeholder {
       color: $main-color;
+      font-weight: bold;
     }
   }
 }
