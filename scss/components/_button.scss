@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 .btn-box {
   position: $btnbox-position;
@@ -6,6 +7,12 @@
   justify-content: $btnbox-justify;
   width: $btnbox-width;
   height: $btnbox-height;
+
+  //extraSmall
+  @include breakpoint('extraSmall') {
+    width: 25rem;
+    height: 5rem;
+  }
 
   &__btn {
     position: $btn-position;
@@ -20,6 +27,12 @@
     z-index: $btn-z-index;
     overflow: $btn-overflow;
     transition: $btn-transition;
+
+    //extraSmall
+    @include breakpoint('extraSmall') {
+      width: 10rem;
+      padding-inline: 3rem;
+    }
   }
 
   &__btn:hover {
