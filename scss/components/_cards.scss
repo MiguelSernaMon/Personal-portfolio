@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 .projects__cards {
   position: $card-position;
   border: $card-border;
@@ -26,5 +27,9 @@
     position: $card-title-position;
     width: $card-title-width;
     bottom: $card-title-bottom;
+    //extraSmall
+    @include breakpoint('extraSmall') {
+      padding: 0 0.2rem;
+    }
   }
 }
