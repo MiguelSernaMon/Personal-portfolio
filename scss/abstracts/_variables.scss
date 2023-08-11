@@ -6,11 +6,13 @@
 @forward '../base/fonts';
 /// Logo font family
 /// @type List
-$text-font-stack: 'Press Start 2P', cursive;
+$text-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+  'Monaco', monospace !default;
 
 ///Page font family
 /// @type List
 $titles-font-stack: 'sabo', sans-serif;
+$titles-font-stack2: 'sabo-regular', sans-serif;
 
 /// Code (monospace) font family
 /// @type List
@@ -67,11 +69,11 @@ $h3titles-align: center;
 $h3titles-span-color: red;
 
 //text animate variables
-$text-size: clamp(0.2rem, 0.6rem + 1vw, 2.8rem);
+$text-size: clamp(1.5rem, 0.3rem + 1vw, 2.8rem);
 $text-position: relative;
 $text-margin: 4rem 0 4rem;
 $text-weight: bolder;
-$text-line-height: clamp(1.5rem, 0.4rem + 2vw, 4rem);
+$text-line-height: clamp(1.5rem, 0.4rem + 1.2vw, 4rem);
 $text-color2: hsl(0, 1%, 69%);
 
 //home variables
@@ -101,7 +103,6 @@ $shortlink-icon-height: 100%;
 
 //imgHover variables
 $imgHover-width: 45%;
-$imgHover-height: 45%;
 $imgHover-background: transparent;
 $imgHover-border: 2px solid red;
 $imgHover-max-width: rem(1200);

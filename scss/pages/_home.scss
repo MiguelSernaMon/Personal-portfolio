@@ -11,6 +11,7 @@
   //large
   @include breakpoint('large') {
     flex-direction: column-reverse;
+    justify-content: start;
     padding-top: 10rem;
   }
   //medium
@@ -22,7 +23,7 @@
   }
   //extraSmall
   @include breakpoint('extraSmall') {
-    padding-top: 2rem;
+    padding-top: 8rem;
   }
 
   &__content {
@@ -36,7 +37,7 @@
     //xextraLarge
     @include breakpoint('xextraLarge') {
       max-width: 80rem;
-      margin-top: 15rem;
+      margin-top: 5rem;
     }
     //extraLarge
     @include breakpoint('extraLarge') {
@@ -66,7 +67,6 @@
 
   &__content p {
     margin: $text-margin;
-    display: flex;
   }
 
   &__links-container {
@@ -86,6 +86,27 @@
       width: 7rem;
       height: 7rem;
     }
+    //xextraLarge
+    @include breakpoint('xextraLarge') {
+      width: 4rem;
+      height: 4rem;
+    }
+    //extraLarge
+    @include breakpoint('extraLarge') {
+    }
+    //large
+    @include breakpoint('large') {
+      margin-top: 0;
+    }
+    //medium
+    @include breakpoint('medium') {
+    }
+    //small
+    @include breakpoint('small') {
+    }
+    //extraSmall
+    @include breakpoint('extraSmall') {
+    }
   }
 
   &__shortlink:hover {
@@ -100,7 +121,7 @@
 
   &__imgHover {
     width: $imgHover-width;
-    height: $imgHover-height;
+    //height: $imgHover-height;
     background: $imgHover-background;
     border: $imgHover-border;
     max-width: $imgHover-max-width;

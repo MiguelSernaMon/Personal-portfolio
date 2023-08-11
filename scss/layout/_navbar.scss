@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 .navbar {
   display: $navbar-display;
   align-items: $navbar-align-items;
@@ -9,5 +10,31 @@
   &__link {
     margin-left: $navbar-link-margin-left;
     transition: $navbar-link-transition;
+
+    //fhd
+    @include breakpoint('fhdscreen') {
+      margin-left: 5rem;
+    }
+    //xextraLarge
+    @include breakpoint('xextraLarge') {
+      margin-left: 3rem;
+    }
+    //extraLarge
+    @include breakpoint('extraLarge') {
+    }
+    //large
+    @include breakpoint('large') {
+      width: 100%;
+      margin-top: 0;
+    }
+    //medium
+    @include breakpoint('medium') {
+    }
+    //small
+    @include breakpoint('small') {
+    }
+    //extraSmall
+    @include breakpoint('extraSmall') {
+    }
   }
 }
