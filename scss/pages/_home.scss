@@ -13,6 +13,7 @@
     flex-direction: column-reverse;
     justify-content: start;
     padding-top: 10rem;
+    height: 850px;
   }
   //medium
   @include breakpoint('medium') {
@@ -24,6 +25,7 @@
   //extraSmall
   @include breakpoint('extraSmall') {
     padding-top: 8rem;
+    height: 800px;
   }
 
   &__content {
@@ -57,6 +59,7 @@
     }
     //extraSmall
     @include breakpoint('extraSmall') {
+      height: 600px;
     }
   }
 
@@ -106,6 +109,9 @@
     }
     //extraSmall
     @include breakpoint('extraSmall') {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 0.6rem;
     }
   }
 
