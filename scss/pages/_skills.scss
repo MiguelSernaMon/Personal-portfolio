@@ -10,42 +10,15 @@
   padding: $skills-padding;
   align-items: center;
 
-  &__title {
-    display: $skills-title-display;
-    position: $skills-title-position;
-    top: $skills-title-top;
-
-    @include breakpoint('2kscreen') {
-      top: -10rem;
-    }
-  }
-
-  &__gif {
-    width: $skills-gif-width;
-    height: $skills-gif-height;
-    background-image: url($skills-gif-bg-img);
-    background-size: $skills-gif-bg-size;
-    position: $skills-gif-position;
-    left: $skills-gif-left;
-    top: $skills-gif-top;
-
-    //2k
-    @include breakpoint('2kscreen') {
-      width: 150px;
-      height: 150px;
-      top: 0rem;
-    }
-    //fhd
-    @include breakpoint('fhdscreen') {
-      top: -3rem;
-    }
-  }
-
   & h3 {
-    margin: $skills-title-margin;
-    width: $skills-title-width;
+    text-align: center;
+    position: absolute;
+    top: 0rem;
+    //extraSmall
+    @include breakpoint('extraSmall') {
+      top: 5rem;
+    }
   }
-
   &__container {
     width: $skills-container-width;
     display: $skills-container-display;
@@ -63,6 +36,41 @@
     height: rem(200);
     margin: $skill-logo-margin;
     transition: $skill-logo-transition;
+
+    //fhd
+    @include breakpoint('fhdscreen') {
+      width: rem(150);
+      height: rem(150);
+    }
+
+    //xextraLarge
+    @include breakpoint('xextraLarge') {
+    }
+    //extraLarge
+    @include breakpoint('extraLarge') {
+      grid-template-columns: repeat(auto-fit, minmax(rem(400), 1fr));
+    }
+    //large
+    @include breakpoint('large') {
+      width: rem(100);
+      height: rem(100);
+      margin: rem(10);
+    }
+    //medium
+    @include breakpoint('medium') {
+      grid-template-columns: repeat(auto-fit, minmax(rem(300), 1fr));
+    }
+    //small
+    @include breakpoint('small') {
+      width: rem(80);
+      height: rem(80);
+    }
+    //extraSmall
+    @include breakpoint('extraSmall') {
+      width: rem(40);
+      height: rem(40);
+      margin: 0.2rem;
+    }
   }
 }
 
