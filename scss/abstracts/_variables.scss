@@ -270,7 +270,7 @@ $header-position: fixed;
 $header-top: 0;
 $header-left: 0;
 $header-width: 100%;
-$header-padding: 2rem 9%;
+$header-padding: 0 9%;
 $header-bg: transparent;
 $header-display: flex;
 $header-justify: space-between;
@@ -282,7 +282,7 @@ $header-logo-font-size: clamp(1.75rem, 1rem + 2vw, 7.5rem);
 //navbar variables
 $navbar-display: flex;
 $navbar-align-items: center;
-$menu-icon-size: 7.5rem;
+$menu-icon-size: clamp(3.5rem, 1rem + 1vw, 7.5rem);
 //navbar-links
 $navbar-link-font-size: clamp(1.5rem, 1rem + 1.3vw, 5.5rem);
 $navbar-link-margin-left: 10.5rem;
@@ -303,4 +303,15 @@ $breakpoints-down: (
   'medium': em(768),
   'small': em(640),
   'extraSmall': em(475),
+);
+
+$breakpoints-up: (
+  '2kscreen': em(2559.8),
+  'fhdscreen': em(1919.8),
+  'xextraLarge': em(1535.8),
+  'extraLarge': em(1279.8),
+  'large': em(1023.8),
+  'medium': em(768.2),
+  'small': em(639.8),
+  'extraSmall': em(474.8),
 );
