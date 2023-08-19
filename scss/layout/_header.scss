@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 .header {
   position: $header-position;
@@ -11,4 +12,16 @@
   justify-content: $header-justify;
   align-items: $header-align;
   z-index: $header-z-index;
+  backdrop-filter: blur(100px);
+  // box-shadow: 0 15px 5px -15px rgb(211, 211, 211);
+
+  #menu-icon {
+    cursor: pointer;
+  }
+
+  @include breakpoint-up('medium') {
+    #menu-icon {
+      display: none;
+    }
+  }
 }
