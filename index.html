@@ -178,7 +178,11 @@
     <section class="contact" id="contact">
       <h3>Contact <span>Me!</span></h3>
       <!-- form for contact -->
-      <form action="#" class="form">
+      <form
+        action="https://formsubmit.co/migueloserna@gmail.com"
+        method="POST"
+        class="form"
+      >
         <div class="form__input-box">
           <div class="form__input-field">
             <input
@@ -186,6 +190,7 @@
               id="input-username"
               type="text"
               placeholder="Full Name"
+              name="name"
               required
             />
           </div>
@@ -195,6 +200,7 @@
               id="input-email"
               type="text"
               placeholder="Email Address"
+              name="email"
               required
             />
           </div>
@@ -206,6 +212,7 @@
               id="input-number"
               type="number"
               placeholder="Mobile Number"
+              name="number"
               required
             />
           </div>
@@ -215,6 +222,7 @@
               id="input-email"
               type="text"
               placeholder="Email Subject"
+              name="subject"
               required
             />
           </div>
@@ -224,11 +232,11 @@
           <textarea
             class="form__textarea"
             spellcheck="false"
-            name=""
             id=""
             cols="30"
             rows="10"
             placeholder="Your Message"
+            name="comments"
             required
           ></textarea>
           <span class="focus"></span>
